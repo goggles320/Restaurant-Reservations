@@ -73,8 +73,9 @@
         forcePoints: $("#uniqueID").val().trim()
       };
 
-      // Question: What does this code do??
-       // Question: What does this code do??
+     //Needs to be turned into if/else statement depending on 
+    //length of the booking array. > 5 then go to the waitlist API 
+    // if > = 5 then add to bookings array. 
       $.post("/api/characters", newReservation)
         .then(function(data) {
           console.log("reserve.html", data);
